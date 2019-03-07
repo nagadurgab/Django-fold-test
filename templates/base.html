@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Sub Folders List{% endblock %}</title>
+    <style>
+   
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+}
+th, td {
+  padding: 3px;
+  text-align: right; 
+
+}
+</style>
+  </head>
+  <body>
+    <h1>Sub Folders List</h1>
+    <hr>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

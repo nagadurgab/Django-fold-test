@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Django SubFolders List{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h4>Sub-Folders inside Selected Folder:</h4>
+<ul>
+  <li>Selected Folder
+    <ul>
+  <li>{{select_sub_fold}}</li>
+</ul>
+</li>
+  <li>Sub-Folders inside {{select_sub_fold}}
+    <ul>
+      {% for sub_folder in sub_folders %}
+      <li>{{sub_folder}}</li>
+    {% endfor %}  
+    </ul>
+  </li>
+
+  <li>Sub-Folders inside {{select_sub_fold2}}
+    <ul>
+      {% for sub_folder in sub_folders2 %}
+      <li>{{sub_folder}}</li>
+    {% endfor %}  
+    </ul>
+  </li>
+ 
+</ul>
+
+{% endblock %}
+
